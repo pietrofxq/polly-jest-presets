@@ -4,5 +4,6 @@ declare type PollyContext = {
     };
 };
 export declare const pollyContext: PollyContext;
+export declare const jsdom: any;
 export {};
 //# sourceMappingURL=pollyContext.d.ts.map

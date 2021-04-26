@@ -1,6 +1,7 @@
 /** @jest-environment setup-polly-jest/jest-environment-jsdom */
 import path from 'path';
 import { setupPolly } from 'setup-polly-jest';
+import jestEnv from 'setup-polly-jest/jest-environment-jsdom'
 import { Polly } from '@pollyjs/core';
 import NodeHttpAdapter from '@pollyjs/adapter-node-http';
 import FSPersister from '@pollyjs/persister-fs';
@@ -56,3 +57,5 @@ function getDefaultRecordingDir() {
     `${path.dirname(testPath)}/__recordings__`,
   );
 }
+
+export const jsdom = jestEnv
